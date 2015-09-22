@@ -1,9 +1,18 @@
+" # http://blog.thomasupton.com/2014/02/migrating-from-pathogen-to-vundle/
+set nocompatible
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
 " https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " http://www.sontek.net/blog/2011/05/07/turning_vim_into_a_modern_python_ide.html
-filetype off
-call pathogen#helptags()
+" filetype off
+" call pathogen#helptags()
 
 :filetype plugin indent on
 :syntax on
