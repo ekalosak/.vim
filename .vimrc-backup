@@ -1,0 +1,15 @@
+" https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
+" http://www.sontek.net/blog/2011/05/07/turning_vim_into_a_modern_python_ide.html
+filetype off
+call pathogen#helptags()
+
+:filetype plugin indent on
+:syntax on
+:imap jj <esc>
+:imap <C-j> @q
+:set nu
+:set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+:set backspace=2
+:set autoindent
